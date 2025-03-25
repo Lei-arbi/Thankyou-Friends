@@ -1,0 +1,192 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+    background-color: #343a40 !important;
+}
+
+.landing-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('i14.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.landing-section h1 {
+    font-size: 4.5rem; /* Increased font size */
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.landing-section p {
+    font-size: 2rem; /* Increased font size */
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.landing-section .btn {
+    font-size: 1.25rem; /* Increased font size */
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.friends-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.friend-profile-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.friend-profile-section a {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.friend-profile-section img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+    border-radius: 50%; /* Make the profile picture round */
+}
+
+.friend-profile-section h2 {
+    font-size: 2rem; /* Increased font size */
+}
+
+.friend-profile-section p {
+    font-size: 1.25rem; /* Increased font size */
+}
+
+.friend-gallery-section {
+    padding: 4rem 0;
+}
+
+.friend-gallery-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.friend-gallery-section .col-md-4 {
+    margin-bottom: 1rem;
+}
+
+.friend-gallery-section img {
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.friend-gallery-section img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item img {
+    width: 100%; /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.footer {
+    padding: 1rem 0;
+}
+
+.footer .social-icons a {
+    font-size: 1.75rem; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Mobile Adjustments */
+@media (max-width: 767px) {
+    .landing-section h1 {
+        font-size: 3rem; /* Adjust font size for mobile */
+    }
+
+    .landing-section p {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Adjust width for mobile */
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .footer {
+        padding: 0.5rem 0;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .friends-section .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .friend-gallery-section .col-md-4 {
+        margin-bottom: 1rem;
+    }
+
+    .friend-profile-section img {
+        width: 100px; /* Adjust size for mobile */
+        height: 100px; /* Adjust size for mobile */
+    }
+
+    .friend-profile-section h2 {
+        font-size: 1.75rem; /* Adjust font size for mobile */
+    }
+
+    .friend-profile-section p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .friend-gallery-section img {
+        width: 100%; /* Adjust width for mobile */
+        height: auto; /* Adjust height for mobile */
+    }
+}
