@@ -13,13 +13,21 @@ body {
 
 .landing-section {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('i14.jpg') no-repeat center center;
+    background: url('i1.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    animation: changeBG 30s ease infinite;
+}
+
+@keyframes changeBG {
+    0% { background-image: url('j10.jpg'); }
+    33% { background-image: url('a3.jpg'); }
+    66% { background-image: url('j6.jpg'); }
+    100% { background-image: url('j8.jpg'); }
 }
 
 .landing-section h1 {
@@ -149,44 +157,5 @@ body {
 
     .landing-section p {
         font-size: 1.5rem; /* Adjust font size for mobile */
-    }
-
-    .carousel-item img {
-        width: 100%; /* Adjust width for mobile */
-        height: auto; /* Adjust height for mobile */
-    }
-
-    .footer {
-        padding: 0.5rem 0;
-    }
-
-    .footer .social-icons a {
-        font-size: 1.5rem; /* Adjust font size for mobile */
-    }
-
-    .friends-section .card {
-        margin-bottom: 1.5rem;
-    }
-
-    .friend-gallery-section .col-md-4 {
-        margin-bottom: 1rem;
-    }
-
-    .friend-profile-section img {
-        width: 100px; /* Adjust size for mobile */
-        height: 100px; /* Adjust size for mobile */
-    }
-
-    .friend-profile-section h2 {
-        font-size: 1.75rem; /* Adjust font size for mobile */
-    }
-
-    .friend-profile-section p {
-        font-size: 1rem; /* Adjust font size for mobile */
-    }
-
-    .friend-gallery-section img {
-        width: 100%; /* Adjust width for mobile */
-        height: auto; /* Adjust height for mobile */
     }
 }
